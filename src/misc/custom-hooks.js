@@ -11,7 +11,9 @@ function showsReducer(prevState, action){
             return prevState.filter( (showId) => showId !== action.showId );
         }
 
-        default: return prevState;
+      default: {
+            return prevState
+            }
     }
 }
 
